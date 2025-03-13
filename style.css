@@ -1,0 +1,520 @@
+/* Общие стили */
+body, h2, h3, p {
+  margin: 0;
+  padding: 0;
+  font-family: Lora, serif;
+}
+
+body {
+    background: url('img/sunset.jpg') no-repeat center; 
+    height: 100vh;
+    background-position: 50%;
+    background-size: cover;
+    color: white;
+    text-align: left;
+    background-color: #faf7f2;
+}
+
+
+/* Основная секция */
+#hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    height: 100vh;
+}
+
+.hero-text {
+ width: 50%;
+}
+
+.hero-text h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+.location {
+    font-size: 32px;
+    font-weight: inherit;
+    padding: 10px;
+    
+}
+
+.highlight {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f3a683;
+    margin-left: 10px;
+}
+
+.description {
+  margin-left: 0%;
+}
+
+/* Форма */
+.contact-form {
+    background: rgba(0, 0, 0, 0.477);
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    margin-right: 80px;
+}
+
+.contact-form h2 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.contact-form p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#callbackForm {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: rgb(110, 104, 104);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.866);
+}
+
+button {
+    padding: 10px;
+    background-color: #d2a08e;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #b38373;
+}
+
+#formMessage {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  margin: 15% auto;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  color: black;
+}
+.close {
+  color: black;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* 2 блок */
+
+.project-details {
+  background: linear-gradient(to bottom, #ebe5dd, #eee3d9ca);
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: #8c6d5b 1px solid;
+}
+
+.head {
+    font-size: 24px;
+    color: #8d6654;
+    margin-bottom: 15px;
+}
+
+.details-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+ 
+}
+
+.detail h3 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #8d6654;
+}
+
+.detail p {
+    font-size: 20px;
+    color: #a48b7a;
+}
+
+.divider {
+    width: 2px;
+    height: 50px;
+    background-color: #c2a497;
+}
+
+.payment-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: #a57b66;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.payment-btn:hover {
+    background-color: #8d6654;
+}
+
+/* 3 блок */
+  /* Контейнер */
+  .containerr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #faf7f2;
+    color: #9c7b67;
+    font-family: Lora, serif;
+  }
+  
+  /* Секция с текстом */
+  .content {
+    width: 45%;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #8c6d5b;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+  
+  /* Кнопка */
+  button {
+    background-color: #c49a80;
+    color: #fff;
+    border: none;
+    padding: 12px 34px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+  }
+  
+  button:hover {
+    background-color: #b08a72;
+  }
+  
+  /* Секция с изображением */
+  .image {
+    width: 50%;
+  }
+  
+  .image img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .content,
+    .image {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* 4 блок*/
+  
+  /* Контейнер */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    font-family: "Lora", serif;
+    background-color: #f4eee5;
+    color: #9c7b67;
+  }
+  
+  /* Секция с текстом */
+  .content {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #8c6d5b;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Галерея изображений */
+  .image-gallery {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .image-gallery img {
+    border-radius: 15px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+
+  /* Эффект при наведении */
+  .image-gallery img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .image-gallery {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .image-gallery img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  /* 5 блок */
+  
+  /* Секция удобств */
+  .amenities-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fdfbf7;
+    color: #9c7b67;
+    font-family: Lora, serif;
+  }
+  
+  .head {
+    font-size: 2.5rem;
+    color: #8c6d5b;
+    margin-bottom: 40px;
+  }
+  
+  /* Сетка с удобствами */
+  .amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* Карточка удобства */
+  .amenity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .amenity img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    object-fit: contain;
+  }
+  
+  .amenity p {
+    font-size: 20px;
+    color: #9c7b67;
+  }
+  
+  /* Эффект при наведении */
+  .amenity:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .amenities-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .amenities-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* 6 блок */
+  
+.info-section {
+    padding: 50px 0;
+    text-align: center;
+    background: linear-gradient(to bottom, #e2d1bc, white);
+    font-family: Lora, serif;
+}
+.info-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.info-item {
+    text-align: center;
+    color: #9c7c64;
+}
+.info-item img {
+    width: 50px;
+    height: 50px;
+}
+.info-item h2 {
+    font-size: 20px;
+    margin: 10px 0 5px;
+
+}
+.info-item p {
+    font-size: 20px;
+}
+  /* 7 блок */
+.map-section {
+    text-align: center;
+    padding: 50px 0;
+    background: white;
+    color: #9c7c64;
+}
+.map-container {
+    display: flex;
+    justify-content: center;
+}
+iframe {
+    width: 80%;
+    height: 450px;
+    border: none;
+}
+.heaad {
+  padding: 50px;
+font-size: 48px;
+}
+/* 8 блок */
+.custom-body {
+  background: url('img/footer.png') no-repeat center;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100vh;
+}
+
+#contai {
+  background: rgba(0, 0, 0, 0.027);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  font-family: Lora, serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, button {
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+input {
+  background: rgba(255, 255, 255, 0.8);
+}
+button {
+  background: #c69c8f;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background: #a57e6e;
+}
+.hdn {
+color: white;
+}
+
+.contact-section {
+  background: #f5efe6;
+  padding: 50px;
+  width: 100%;
+  text-align: center;
+  color: #b88c74;
+  font-family: Lora, serif;
+}
+.contact-section h2 {
+  font-size: 34px;
+  font-weight: bold;
+}
+.contact-section p {
+  font-size: 22px;
+}
